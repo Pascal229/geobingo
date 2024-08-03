@@ -1,0 +1,45 @@
+Wir machen ein Geobingo, es treten 2 teams gegeneinander ein und müssen fotos von bestimmten dingen in london schiessen.
+
+Eingrenzung des Gebiets (mache ein oval draus und kein viereck):
+- nördlichster punkt: british muesuem
+- westlicher punkt: hyde park
+- östlichster punkt: tower bridge
+- südlichster punkt: lambeth
+
+Generiere nach folgenden Kategorien:
+## Sehenswürkdigkeiten (auch kleinere) (25%)
+    - ein paar wenige bekannte orte (20% von insgesamt 25%), 
+    - und viele kleinere sehenswürdigkeiten, die man nicht gerade auf dem schirm hat (80% von insgesamt 25%)
+
+## typisch London/England (40%)
+    - traditionelle gegenstände, orte, dinge von england. 
+    - normalere sachen und keine menschen.
+    - können ruhig sehr verschiedene dinge sein
+
+## Personen (15%)
+    - personen die ein bestimmtes merkmal haben (kleidung, behinderung, körper) 
+    - sie sollten auffindbar sein, aber nicht zu offensichtlich
+    - 40% (von insgesamt 15%) müssten etwas typisch englisches an sich haben
+    - 1% (von insgesamt 15%) können Berühmtheiten sein
+
+## Tiere (3%)
+    - ein paar tiere die man in der london innenstadt vorfindet
+    - realistisch auffindbar
+
+## Essen, Restaurants (Markennamen), Getränk, Produkte (17%)
+    - typisch englisches essen, getränke (50% von insgesamt 17%)
+    - markennamen von restaurants, läden, die in der innenstadt zu finden sind (40% von insgesamt 17%)
+    - produkte (10% von insgesamt 17%)
+
+
+
+generiere 100 begriffe nach diesen vorgaben
+
+
+Gebe mir jeden Begriff in folgendem JSON-Format, fasse alle zusammen in einem Array:
+
+{
+    "type": string // Sortiere nach folgenden Kategorien: "place", "thing", "person", "animal", "food", "brand"
+    "label": string // Begriff für Mensch   
+    "searchString": string // Gebe diesen an für alle mit dem type = "place", damit ich die Koordinaten herausfinden kann
+}
